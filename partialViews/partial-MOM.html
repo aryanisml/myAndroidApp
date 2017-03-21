@@ -1,0 +1,31 @@
+﻿
+
+
+<div class="tablewrapper ">
+
+    <div class="tablecssMemo">
+
+        <div class="rowcss headercss green">
+            <div class="cellcss">
+                Minutes of Meetings
+            </div>
+
+        </div>
+        <div class="rowcss">
+            <div class="cellcss">
+                <input class="form-control" placeholder="Seach the MOM" type="text" ng-model="searchText">
+            </div>
+            
+        </div>
+        <div ng-repeat="momItem in vm.mom | orderBy: 'name' | filter: searchText" class="rowcss">
+            <div class="cellcss">
+                <a target="_blank" href={{momItem.links}}>{{momItem.name}}</a>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    
+</div>

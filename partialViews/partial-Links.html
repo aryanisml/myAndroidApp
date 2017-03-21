@@ -1,0 +1,30 @@
+﻿
+
+<div class="tablewrapper ">
+
+    <div class="tablecssMemo">
+
+        <div class="rowcss headercss green">
+            <div class="cellcss">
+                Important Links
+            </div>
+
+        </div>
+        <div class="rowcss">
+            <div class="cellcss">
+                <input class="form-control" placeholder="Seach the Links" type="text" ng-model="searchText">
+            </div>
+
+        </div>
+        <div ng-repeat="linkItem in vm.link | orderBy: 'name' | filter: searchText" class="rowcss">
+            <div class="cellcss">
+                <a target="_blank" href={{linkItem.links}}>{{linkItem.name}}</a>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
