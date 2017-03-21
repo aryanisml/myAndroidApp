@@ -10,7 +10,7 @@
         var vm = this;
 
         vm.mom = [
-            { id: 0, name: "MOM02102016", links: "../../img/MOM02102016.pdf" },
+            { id: 0, name: "MOM02102016", links: "img/MOM02102016.pdf" },
         ];
 
 
